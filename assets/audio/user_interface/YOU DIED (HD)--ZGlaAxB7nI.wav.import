@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cg5f3nfx8x7an"
+path="res://.godot/imported/YOU DIED (HD)--ZGlaAxB7nI.wav-2b77bf47fb8b54c4596fda76661063e2.sample"
+
+[deps]
+
+source_file="res://assets/audio/user_interface/YOU DIED (HD)--ZGlaAxB7nI.wav"
+dest_files=["res://.godot/imported/YOU DIED (HD)--ZGlaAxB7nI.wav-2b77bf47fb8b54c4596fda76661063e2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
