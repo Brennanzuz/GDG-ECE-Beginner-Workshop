@@ -1,2 +1,4 @@
+ColorRect
+Node
 CollisionShape2D
 CharacterBody2D
