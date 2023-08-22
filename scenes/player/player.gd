@@ -3,6 +3,7 @@ extends CharacterBody2D
 const SPEED = 300.0
 @export var health = 100.0
 var can_damage = true
+var GameOverScreen = preload("res://scenes/user_interface/game_over_screen.tscn")
 
 func _physics_process(delta):
 #	if Input.is_action_pressed("ui_up"):
@@ -36,6 +37,8 @@ func receive_damage(damage):
 			die()
 
 func die():
+	var game_over_screen = GameOverScreen.instantiate()
+	get_parent().add_child(game_over_screen)
 	queue_free()
 
 func _on_hurtbox_area_entered(area : Area2D):
