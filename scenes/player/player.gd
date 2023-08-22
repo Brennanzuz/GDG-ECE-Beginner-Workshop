@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 @export var health = 100.0
+var can_damage = true
 
 func _physics_process(delta):
 #	if Input.is_action_pressed("ui_up"):
@@ -27,10 +28,19 @@ func _physics_process(delta):
 	move_and_slide()
 
 func receive_damage(damage):
-	health -= damage
-	if health <= 0:
-		die()
+	if can_damage:
+		can_damage = false
+		$InvulnerabilityTimer.start()
+		health -= damage
+		if health <= 0:
+			die()
 
 func die():
 	queue_free()
-	
+
+func _on_hurtbox_area_entered(area : Area2D):
+	receive_damage(area.get_parent().damage)
+
+
+func _on_invulnerability_timer_timeout():
+	can_damage = true
