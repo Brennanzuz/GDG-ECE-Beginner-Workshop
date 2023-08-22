@@ -1,4 +1,5 @@
+CollisionShape2D
+Area2D
+CharacterBody2D
 ColorRect
 Node
-CollisionShape2D
-CharacterBody2D

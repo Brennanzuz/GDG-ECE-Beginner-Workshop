@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 const SPEED = 300.0
+@export var health = 100.0
 
 func _physics_process(delta):
 #	if Input.is_action_pressed("ui_up"):
@@ -25,3 +26,11 @@ func _physics_process(delta):
 	
 	move_and_slide()
 
+func receive_damage(damage):
+	health -= damage
+	if health <= 0:
+		die()
+
+func die():
+	queue_free()
+	
