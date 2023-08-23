@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc1vrf54idfkw"]
+
+[ext_resource type="Script" path="res://scenes/projectiles/missile.gd" id="1_emlo8"]
+[ext_resource type="Texture2D" uid="uid://cybjgugppakgq" path="res://assets/art/projectiles/towerDefense_tile251.png" id="1_siay6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u7nsh"]
+size = Vector2(34, 10)
+
+[node name="Missile" type="Area2D"]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_emlo8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_u7nsh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_siay6")
+
+[node name="Lifetime" type="Timer" parent="."]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Lifetime" to="." method="_on_lifetime_timeout"]

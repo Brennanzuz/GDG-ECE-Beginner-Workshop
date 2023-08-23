@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bs3rd2hfbnfp0"]
+[gd_scene load_steps=4 format=3 uid="uid://bs3rd2hfbnfp0"]
 
 [ext_resource type="PackedScene" uid="uid://ba0xfmt46t8t1" path="res://scenes/player/player.tscn" id="1_r61bn"]
 [ext_resource type="PackedScene" uid="uid://b81lskb0qxhjw" path="res://scenes/mobs/mob_001.tscn" id="2_k1aas"]
+[ext_resource type="PackedScene" uid="uid://bc1vrf54idfkw" path="res://scenes/projectiles/missile.tscn" id="3_f0bye"]
 
 [node name="Game" type="Node2D"]
 
@@ -22,3 +23,5 @@ position = Vector2(179, 131)
 
 [node name="Mob005" parent="." instance=ExtResource("2_k1aas")]
 position = Vector2(179, 131)
+
+[node name="Missile" parent="." instance=ExtResource("3_f0bye")]

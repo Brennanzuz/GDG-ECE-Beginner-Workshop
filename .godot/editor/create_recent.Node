@@ -1,9 +1,10 @@
+Timer
+CollisionShape2D
+Area2D
+Sprite2D
 AudioStreamPlayer
 AnimationPlayer
 Label
 ColorRect
-Timer
-CollisionShape2D
-Area2D
 CharacterBody2D
 Node

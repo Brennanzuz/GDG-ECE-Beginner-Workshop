@@ -4,6 +4,11 @@ const SPEED = 300.0
 @export var health = 100.0
 var can_damage = true
 var GameOverScreen = preload("res://scenes/user_interface/game_over_screen.tscn")
+var Missile = preload("res://scenes/projectiles/missile.tscn")
+
+func _unhandled_input(event):
+	if event.is_action_pressed("shoot_missile"):
+		shoot_missile()
 
 func _physics_process(delta):
 #	if Input.is_action_pressed("ui_up"):
@@ -40,6 +45,11 @@ func die():
 	var game_over_screen = GameOverScreen.instantiate()
 	get_parent().add_child(game_over_screen)
 	queue_free()
+	
+func shoot_missile():
+	var missile = Missile.instantiate()
+	get_parent().add_child(missile)
+	missile.global_position = global_position
 
 func _on_hurtbox_area_entered(area : Area2D):
 	receive_damage(area.get_parent().damage)

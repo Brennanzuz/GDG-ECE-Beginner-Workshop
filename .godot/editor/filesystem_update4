@@ -3,3 +3,7 @@ res://scenes/main/main.tscn
 res://scenes/main/game.tscn
 res://scenes/mobs/mob_001.tscn
 res://scenes/user_interface/game_over_screen.tscn
+res://scenes/mobs/mob_001.gd
+res://scenes/projectiles/missile.tscn
+res://scenes/projectiles/missile.gd
+res://scenes/player/player.gd
