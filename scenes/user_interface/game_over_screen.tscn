@@ -3,33 +3,6 @@
 [ext_resource type="FontFile" uid="uid://y46ko751w1pc" path="res://assets/art/fonts/DejaVuSerif.ttf" id="1_3awq2"]
 [ext_resource type="AudioStream" uid="uid://cg5f3nfx8x7an" path="res://assets/audio/user_interface/YOU DIED (HD)--ZGlaAxB7nI.wav" id="2_oslc5"]
 
-[sub_resource type="Animation" id="Animation_ws0vr"]
-resource_name = "game_over"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label:theme_override_font_sizes/font_size")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [64, 128]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Label:theme_override_colors/font_color")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 0, 0, 1), Color(1, 0, 0, 0)]
-}
-
 [sub_resource type="Animation" id="Animation_4h2r0"]
 length = 0.001
 tracks/0/type = "value"
@@ -57,6 +30,33 @@ tracks/1/keys = {
 "values": [Color(1, 0, 0, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_ws0vr"]
+resource_name = "game_over"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:theme_override_font_sizes/font_size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [64, 128]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 1), Color(1, 0, 0, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_u5f7i"]
 _data = {
 "RESET": SubResource("Animation_4h2r0"),
@@ -64,6 +64,7 @@ _data = {
 }
 
 [node name="GameOverScreen" type="Control"]
+top_level = true
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
