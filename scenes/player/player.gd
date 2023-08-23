@@ -50,6 +50,7 @@ func shoot_missile():
 	var missile = Missile.instantiate()
 	get_parent().add_child(missile)
 	missile.global_position = global_position
+	missile.look_at(get_global_mouse_position())
 
 func _on_hurtbox_area_entered(area : Area2D):
 	receive_damage(area.get_parent().damage)
