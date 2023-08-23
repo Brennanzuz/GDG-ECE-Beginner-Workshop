@@ -1,4 +1,5 @@
 Timer
+Marker2D
 NavigationAgent2D
 TileMap
 CollisionShape2D

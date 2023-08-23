@@ -6,3 +6,5 @@ res://scenes/mobs/mob_001.tscn
 res://scenes/user_interface/game_over_screen.tscn
 res://scenes/projectiles/missile.tscn
 res://scenes/mobs/mob_001.gd
+res://scenes/mobs/spawnpoint.gd
+res://scenes/mobs/spawnpoint.tscn

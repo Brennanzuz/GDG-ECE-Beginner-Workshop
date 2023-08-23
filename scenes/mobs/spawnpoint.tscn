@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://crc7svh70q4fw"]
+
+[ext_resource type="Script" path="res://scenes/mobs/spawnpoint.gd" id="1_hhjwi"]
+[ext_resource type="PackedScene" uid="uid://b81lskb0qxhjw" path="res://scenes/mobs/mob_001.tscn" id="2_unfry"]
+
+[node name="Spawnpoint" type="Marker2D"]
+script = ExtResource("1_hhjwi")
+Mob = ExtResource("2_unfry")
+
+[node name="Spawntime" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Spawntime" to="." method="_on_spawntime_timeout"]

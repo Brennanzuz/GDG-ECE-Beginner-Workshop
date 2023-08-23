@@ -26,6 +26,8 @@ func die():
 
 func _on_hurtbox_area_entered(area: Area2D):
 	receive_damage(area.damage)
+	area.queue_free()
 
 func _on_timer_timeout():
-	$NavigationAgent2D.target_position = get_parent().get_node("Player").global_position
+	if get_parent().get_node("Player"):
+		$NavigationAgent2D.target_position = get_parent().get_node("Player").global_position

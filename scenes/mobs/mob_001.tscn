@@ -35,6 +35,7 @@ position = Vector2(0, 4)
 shape = SubResource("RectangleShape2D_0c06k")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
 
 [node name="Timer" type="Timer" parent="."]
 autostart = true

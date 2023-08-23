@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://bprc2hqw8u3vi" path="res://scenes/maps/map_001.tscn" id="1_bpdr3"]
 [ext_resource type="PackedScene" uid="uid://ba0xfmt46t8t1" path="res://scenes/player/player.tscn" id="1_r61bn"]
-[ext_resource type="PackedScene" uid="uid://b81lskb0qxhjw" path="res://scenes/mobs/mob_001.tscn" id="2_k1aas"]
+[ext_resource type="PackedScene" uid="uid://crc7svh70q4fw" path="res://scenes/mobs/spawnpoint.tscn" id="3_5gaka"]
 
 [node name="Game" type="Node2D"]
 
@@ -11,17 +11,5 @@
 [node name="Player" parent="." instance=ExtResource("1_r61bn")]
 position = Vector2(449, 189)
 
-[node name="Mob001" parent="." instance=ExtResource("2_k1aas")]
-position = Vector2(190, 189)
-
-[node name="Mob002" parent="." instance=ExtResource("2_k1aas")]
-position = Vector2(190, 189)
-
-[node name="Mob003" parent="." instance=ExtResource("2_k1aas")]
-position = Vector2(190, 189)
-
-[node name="Mob004" parent="." instance=ExtResource("2_k1aas")]
-position = Vector2(190, 189)
-
-[node name="Mob005" parent="." instance=ExtResource("2_k1aas")]
-position = Vector2(190, 189)
+[node name="Spawnpoint" parent="." instance=ExtResource("3_5gaka")]
+position = Vector2(193, 192)
