@@ -1,3 +1,33 @@
-[gd_scene format=3 uid="uid://bprc2hqw8u3vi"]
+[gd_scene load_steps=6 format=3 uid="uid://bprc2hqw8u3vi"]
+
+[ext_resource type="Texture2D" uid="uid://bgvcsfulcsc33" path="res://assets/art/maps/tiles/StevenHalim.png" id="1_gijuh"]
+[ext_resource type="Texture2D" uid="uid://dqoijwim41gl0" path="res://icon.svg" id="2_fecpw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2aje3"]
+texture = ExtResource("1_gijuh")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2wthk"]
+texture = ExtResource("2_fecpw")
+texture_region_size = Vector2i(128, 128)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+
+[sub_resource type="TileSet" id="TileSet_pei4a"]
+tile_size = Vector2i(128, 128)
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_2aje3")
+sources/1 = SubResource("TileSetAtlasSource_2wthk")
 
 [node name="Map001" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_pei4a")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 65544, 0, 0, 131080, 0, 0, 196616, 0, 0, 262152, 0, 0, 262151, 0, 0, 262150, 0, 0, 262149, 0, 0, 262148, 0, 0, 262147, 0, 0, 262146, 0, 0, 262145, 0, 0, 262144, 0, 0, 196608, 0, 0, 131072, 0, 0, 65536, 0, 0, 65538, 0, 0, 131074, 0, 0, 196612, 0, 0, 131076, 0, 0, 65542, 0, 0, 131078, 0, 0, 65537, 1, 0, 131073, 1, 0, 196609, 1, 0, 196610, 1, 0, 196611, 1, 0, 131075, 1, 0, 65539, 1, 0, 65540, 1, 0, 65541, 1, 0, 131077, 1, 0, 196613, 1, 0, 196614, 1, 0, 196615, 1, 0, 131079, 1, 0, 65543, 1, 0)

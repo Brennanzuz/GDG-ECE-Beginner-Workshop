@@ -7,3 +7,4 @@ res://scenes/mobs/mob_001.gd
 res://scenes/projectiles/missile.tscn
 res://scenes/projectiles/missile.gd
 res://scenes/player/player.gd
+res://scenes/maps/map_001.tscn
