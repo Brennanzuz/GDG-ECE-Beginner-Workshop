@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bprc2hqw8u3vi"]
+[gd_scene load_steps=7 format=3 uid="uid://bprc2hqw8u3vi"]
 
 [ext_resource type="Texture2D" uid="uid://bgvcsfulcsc33" path="res://assets/art/maps/tiles/StevenHalim.png" id="1_gijuh"]
 [ext_resource type="Texture2D" uid="uid://dqoijwim41gl0" path="res://icon.svg" id="2_fecpw"]
@@ -11,17 +11,24 @@ texture_region_size = Vector2i(128, 128)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_y3y5d"]
+vertices = PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-64, -64, 64, -64, 64, 64, -64, 64)])
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2wthk"]
 texture = ExtResource("2_fecpw")
 texture_region_size = Vector2i(128, 128)
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_y3y5d")
 
 [sub_resource type="TileSet" id="TileSet_pei4a"]
 tile_size = Vector2i(128, 128)
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 0
+navigation_layer_0/layers = 1
 sources/0 = SubResource("TileSetAtlasSource_2aje3")
 sources/1 = SubResource("TileSetAtlasSource_2wthk")
 

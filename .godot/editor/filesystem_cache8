@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1692787204
+::res://::1692794498
 icon.svg::CompressedTexture2D::8311687814389080519::1692673115::1692673123::1::::<><>::
 README.md::TextFile::-1::1692673649::0::1::::<><>::
 ::res://assets/::1692673139
@@ -155,22 +155,25 @@ run - 5.png::CompressedTexture2D::3099202184907401764::1660845353::1692673164::1
 run - 6.png::CompressedTexture2D::3696351504010030121::1660845353::1692673164::1::::<><>::
 run - 7.png::CompressedTexture2D::6623710117818078112::1660845353::1692673164::1::::<><>::
 run - 8.png::CompressedTexture2D::1686945135431365610::1660845353::1692673164::1::::<><>::
-::res://assets/art/projectiles/::1692673164
+::res://assets/art/projectiles/::1692790377
 towerDefense_tile251.png::CompressedTexture2D::6459996220588784212::1639393460::1692790377::1::::<><>::
 ::res://assets/audio/::1692673139
 ::res://assets/audio/user_interface/::1692673165
 YOU DIED (HD)--ZGlaAxB7nI.wav::AudioStreamWAV::5256260040646987893::1619000880::1692673165::1::::<><>::
-::res://scenes/::1692789816
-::res://scenes/main/::1692789242
-game.tscn::PackedScene::3708661421723217795::1692789242::0::1::::<><>::uid://ba0xfmt46t8t1::::res://scenes/player/player.tscn<>uid://b81lskb0qxhjw::::res://scenes/mobs/mob_001.tscn
-main.tscn::PackedScene::3894154803587212221::1692789242::0::1::::<><>::uid://bs3rd2hfbnfp0::::res://scenes/main/game.tscn
-::res://scenes/mobs/::1692790288
-mob_001.gd::GDScript::-1::1692790288::0::1::::<>CharacterBody2D<>::
-mob_001.tscn::PackedScene::4757026904500928380::1692790288::0::1::::<><>::uid://hs0oay5mvicp::::res://assets/art/mobs/mob0001.png<>res://scenes/mobs/mob_001.gd
-::res://scenes/player/::1692789242
-player.gd::GDScript::-1::1692709761::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::2439436208339073548::1692789242::0::1::::<><>::res://scenes/player/player.gd<>uid://cggg1nvrc78na::::res://assets/art/player/player.png
-::res://scenes/projectiles/::1692789821
-missile.tscn::PackedScene::2581777918208524214::1692790358::0::1::::<><>::uid://cybjgugppakgq::::res://assets/art/projectiles/towerDefense_tile251.png
-::res://scenes/user_interface/::1692789242
-game_over_screen.tscn::PackedScene::6064778109528982708::1692789242::0::1::::<><>::uid://y46ko751w1pc::::res://assets/art/fonts/DejaVuSerif.ttf<>uid://cg5f3nfx8x7an::::res://assets/audio/user_interface/YOU DIED (HD)--ZGlaAxB7nI.wav
+::res://scenes/::1692793227
+::res://scenes/main/::1692794469
+game.tscn::PackedScene::3708661421723217795::1692794469::0::1::::<><>::uid://bprc2hqw8u3vi::::res://scenes/maps/map_001.tscn<>uid://ba0xfmt46t8t1::::res://scenes/player/player.tscn<>uid://b81lskb0qxhjw::::res://scenes/mobs/mob_001.tscn
+main.tscn::PackedScene::3894154803587212221::1692794469::0::1::::<><>::uid://bs3rd2hfbnfp0::::res://scenes/main/game.tscn
+::res://scenes/maps/::1692794470
+map_001.tscn::PackedScene::3474517803928387378::1692794470::0::1::::<><>::uid://bgvcsfulcsc33::::res://assets/art/maps/tiles/StevenHalim.png<>uid://dqoijwim41gl0::::res://icon.svg
+::res://scenes/mobs/::1692794470
+mob_001.gd::GDScript::-1::1692794469::0::1::::<>CharacterBody2D<>::
+mob_001.tscn::PackedScene::4757026904500928380::1692794470::0::1::::<><>::uid://hs0oay5mvicp::::res://assets/art/mobs/mob0001.png<>res://scenes/mobs/mob_001.gd
+::res://scenes/player/::1692794469
+player.gd::GDScript::-1::1692792529::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::2439436208339073548::1692794469::0::1::::<><>::res://scenes/player/player.gd<>uid://cggg1nvrc78na::::res://assets/art/player/player.png
+::res://scenes/projectiles/::1692794470
+missile.gd::GDScript::-1::1692793107::0::1::::<>Area2D<>::
+missile.tscn::PackedScene::2581777918208524214::1692794470::0::1::::<><>::res://scenes/projectiles/missile.gd<>uid://cybjgugppakgq::::res://assets/art/projectiles/towerDefense_tile251.png
+::res://scenes/user_interface/::1692794470
+game_over_screen.tscn::PackedScene::6064778109528982708::1692794470::0::1::::<><>::uid://y46ko751w1pc::::res://assets/art/fonts/DejaVuSerif.ttf<>uid://cg5f3nfx8x7an::::res://assets/audio/user_interface/YOU DIED (HD)--ZGlaAxB7nI.wav
